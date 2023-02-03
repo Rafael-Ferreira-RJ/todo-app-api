@@ -37,3 +37,12 @@ Utilizando o que desenvolvemos até aqui da TODO app api, implemente:<br>
 ⇨ Utilize o verbo POST<br>
 ⇨ Utilize o caminho/path de tarefa (‘tarefa”)<br>
 ⇨ Responda a requisição com o texto: “Rota POST de tarefa ativada: tarefa adicionada ao banco de dados”<br>
+
+4ª PARTE - AULA 05 - MÓDULO 05 (PROGRAMADORES CARIOCAS)
+
+Atividade: POST & body-parser
+
+Utilizando o que desenvolvemos até aqui da TODO app api, faça o que se pede:<br>
+➔ No arquivo do servidor, adicione o body-parser como middleware (com o método use do express), para processar requisições com corpo JSON<br>
+➔ Implemente nas rotas de POST dos controllers uma verificação do corpo (body) do objeto de requisição. Para cada valor recebido faça um console.log simples.<br>
+Obs: Utilize o insomnia/postman para testar as novas rotas criadas, utilizando o método POST, com um JSON sendo passado no corpo da Requisição<br>
