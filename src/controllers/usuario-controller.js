@@ -8,6 +8,7 @@ function configUserGet(app) {
 
 function configUserPost(app) {
     app.post('/usuario', (req, res) => {
+        console.log(req.body);
         res.send('Rota POST de usuario ativada: usuário adicionado ao banco de dados')
     })
 }

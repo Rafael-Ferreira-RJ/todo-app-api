@@ -8,6 +8,7 @@ function configTarefaGet(app) {
 
 function configTarefaPost(app) {
     app.post('/tarefa', (req, res) => {
+        console.log(req.body);
         res.send('Rota POST de tarefa ativada: tarefa adicionada ao banco de dados')
     })
 }
