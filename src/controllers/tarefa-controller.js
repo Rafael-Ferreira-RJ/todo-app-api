@@ -1,9 +1,16 @@
 const express = require('express');
 
-function configTarefa(app) {
-    app.get('/tarefas', (req, res) => {
+function configTarefaGet(app) {
+    app.get('/tarefa', (req, res) => {
         res.send('Rota ativada com GET e recurso tarefas: título, data, status e descrição devem ser retornados')
     })
 }
 
-module.exports = configTarefa;
+function configTarefaPost(app) {
+    app.post('/tarefa', (req, res) => {
+        res.send('Rota POST de tarefa ativada: tarefa adicionada ao banco de dados')
+    })
+}
+
+// Exportação da Função
+module.exports = {configTarefaGet, configTarefaPost}
