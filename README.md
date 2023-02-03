@@ -23,3 +23,17 @@ Na pasta do projeto TODO app API crie as seguintes pastas e arquivos seguindo a 
 ⇨ Transfira as rotas de usuario e tarefa presentes no app/servidor para os arquivos correspondentes de controller<br>
 ⇨ Crie nos arquivos do controller uma função que recebe como parâmetro o app e configura as rotas<br>
 ⇨ Importe os controllers no app/servidor e utilize a função importada para configurar as rotas<br>
+
+3ª PARTE - AULA 05 - MÓDULO 05 (PROGRAMADORES CARIOCAS)
+
+Atividade: POST API
+
+Utilizando o que desenvolvemos até aqui da TODO app api, implemente:<br>
+⇨ Uma nova rota para usuário dentro do usuario-controller que:<br>
+⇨ Utilize o verbo POST<br>
+⇨ Utilize o caminho/path de usuário (‘usuario’)<br>
+⇨ Responda a requisição com o texto: “Rota POST de usuario ativada: usuário adicionado ao banco de dados”<br>
+⇨ Uma nova rota para tarefas dentro do tarefa-controller que:<br>
+⇨ Utilize o verbo POST<br>
+⇨ Utilize o caminho/path de tarefa (‘tarefa”)<br>
+⇨ Responda a requisição com o texto: “Rota POST de tarefa ativada: tarefa adicionada ao banco de dados”<br>
