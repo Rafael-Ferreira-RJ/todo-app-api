@@ -1,17 +1,18 @@
-const express = require('express');
+class TarefaController {
+    static rotas(app) {
+        app.get('/tarefa', TarefaController.listar)
+        app.post('/tarefa', TarefaController.inserir)
+    }
 
-function configTarefaGet(app) {
-    app.get('/tarefa', (req, res) => {
-        res.send('Rota ativada com GET e recurso tarefas: título, data, status e descrição devem ser retornados')
-    })
+    // GET
+    static listar(req, res) {
+        res.send('Rota GET da tarefa ativada')
+    }
+
+    // POST
+    static inserir(req, res) {
+        res.send('Rota POST da tarefa ativada')
+    }
 }
 
-function configTarefaPost(app) {
-    app.post('/tarefa', (req, res) => {
-        console.log(req.body);
-        res.send('Rota POST de tarefa ativada: tarefa adicionada ao banco de dados')
-    })
-}
-
-// Exportação da Função
-module.exports = {configTarefaGet, configTarefaPost}
+module.exports = TarefaController

@@ -1,17 +1,18 @@
-const express = require('express');
+class UsuarioController {
+    static rotas(app) {
+        app.get('/usuario', UsuarioController.listar)
+        app.post('/usuario', UsuarioController.inserir)
+    }
 
-function configUserGet(app) {
-    app.get('/usuario', (req, res) => {
-        res.send('Rota ativada com GET e recurso usuário:nome, email e senha devem ser retornados')
-    })
+    // GET
+    static listar(req, res) {
+        res.send('Rota GET do usuário ativada')
+    }
+
+    // POST
+    static inserir(req, res) {
+        res.send('Rota POST do usuário ativada')
+    }
 }
 
-function configUserPost(app) {
-    app.post('/usuario', (req, res) => {
-        console.log(req.body);
-        res.send('Rota POST de usuario ativada: usuário adicionado ao banco de dados')
-    })
-}
-
-// Exportação da Função
-module.exports = {configUserGet, configUserPost}
+module.exports = UsuarioController

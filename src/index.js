@@ -9,18 +9,24 @@ app.use(express.json())
 //const configTarefa = require('./controllers/tarefa-controller');
 //configTarefa(app);
 
-const {configTarefaGet, configTarefaPost} = require('./controllers/tarefa-controller')
-configTarefaGet(app)
-configTarefaPost(app)
+// const {configTarefaGet, configTarefaPost} = require('./controllers/tarefa-controller')
+// configTarefaGet(app)
+// configTarefaPost(app)
+
+const TarefaController = require('./controllers/tarefa-controller')
+TarefaController.rotas(app)
 
 // Importação Função "configUser"
 
 //const configUser = require('./controllers/usuario-controller');
 //configUser(app);
 
-const {configUserGet, configUserPost} = require('./controllers/usuario-controller')
-configUserGet(app)
-configUserPost(app)
+// const {configUserGet, configUserPost} = require('./controllers/usuario-controller')
+// configUserGet(app)
+// configUserPost(app)
+
+const UsuarioController = require('./controllers/usuario-controller')
+UsuarioController.rotas(app)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
