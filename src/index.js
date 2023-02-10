@@ -1,7 +1,10 @@
+// Importando o packages
 const express = require('express')
-const app = express()
-const port = 3000
 
+// instanciando o servidor
+const app = express()
+
+// configurando o servidor para receber requisições com o corpo no formato JSON
 app.use(express.json())
 
 // Importação Função "configTarefa"
@@ -28,6 +31,5 @@ TarefaController.rotas(app)
 const UsuarioController = require('./controllers/usuario-controller')
 UsuarioController.rotas(app)
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+module.exports = app
+
