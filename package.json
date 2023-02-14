@@ -1,11 +1,12 @@
 {
-  "name": "aula-03",
+  "type": "module",
+  "name": "projetosala-mod5",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index",
-    "dev": "nodemon ./src/index",
+    "start": "nodemon ./src/server.js",
+    "dev": "nodemon ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
